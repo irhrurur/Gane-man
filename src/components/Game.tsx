@@ -26,6 +26,22 @@ const clock = (n: number) =>
     .toString()
     .padStart(2, "0")}:${(n % 60).toString().padStart(2, "0")}`;
 
+const artFor = (environment: string) => {
+  switch (environment) {
+    case "aquarium":
+      return "/images/arena.jpg";
+    case "horror":
+    case "lab":
+      return "/images/horror.jpg";
+    case "desert":
+    case "forest":
+    case "snow":
+      return "/images/survival.jpg";
+    default:
+      return "/images/campaign.jpg";
+  }
+};
+
 function useIsTouch() {
   const [touch, setTouch] = useState(false);
   useEffect(() => {
@@ -552,6 +568,11 @@ export default function Game({
                   : "SOLO + TACTICAL AI"}
               </span>
             </div>
+            <img
+              className="briefing-art"
+              src={artFor(config.environment)}
+              alt={`${config.environment} battlefield`}
+            />
             <p>
               {error ||
                 (!started && config.mode === "campaign"

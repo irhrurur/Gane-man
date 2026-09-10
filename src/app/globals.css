@@ -36,3 +36,7 @@
 .rotate-hint{display:none}
 @media(orientation:portrait){.touch-ui .rotate-hint{display:block;position:absolute;top:calc(84px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:2px;color:#f2a071;background:#10181acc;border:1px solid #f2a07155;padding:8px 14px;border-radius:2px;white-space:nowrap}}
 @media(max-height:500px){.touch-left{bottom:calc(70px + env(safe-area-inset-bottom))}.touch-right{bottom:calc(70px + env(safe-area-inset-bottom))}.stick-base{width:104px;height:104px}.stick-base:before{inset:26px}.touch-btn.fire{width:78px;height:78px;font-size:14px}.touch-btn.sm{width:52px;height:52px;font-size:11px}.touch-btn.xs{width:40px;height:40px;font-size:10px}}
+
+/* ---- Briefing battlefield art ---- */
+.briefing-art{width:100%;height:170px;object-fit:cover;border:1px solid var(--line);margin:18px 0 6px;display:block}
+@media(max-width:740px){.briefing-art{height:120px}}

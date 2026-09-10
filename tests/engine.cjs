@@ -50,7 +50,8 @@ global.document = {
 global.requestAnimationFrame = () => 0;
 global.cancelAnimationFrame = () => {};
 const { Engine } = load("engine"),
-  { missions, arenaModes, defaultSettings, defaultProfile } = load("content");
+  { missions, arenaModes, arenas, defaultSettings, defaultProfile } =
+    load("content");
 let checks = 0;
 function ok(v, label) {
   assert(v, label);
@@ -184,6 +185,37 @@ for (const mode of arenaModes) {
   const e = make({ mode: "arena", rule: mode.rule, target: mode.target });
   objective(e);
   ok(e.result()?.won, "Arena completable: " + mode.name);
+  e.destroy();
+}
+// Every selectable battlefield spawns clear and stays walkable.
+for (const a of arenas) {
+  const e = make({
+    mode: "arena",
+    rule: "team",
+    target: 20,
+    environment: a.environment,
+  });
+  ok(!e.collides(0, 25), "Arena spawn is clear: " + a.name);
+  const seen = new Set(["0,25"]),
+    q = [[0, 25]];
+  for (let i = 0; i < q.length; i++) {
+    const [x, z] = q[i];
+    for (const [dx, dz] of [
+      [1, 0],
+      [-1, 0],
+      [0, 1],
+      [0, -1],
+    ]) {
+      const nx = x + dx,
+        nz = z + dz,
+        key = nx + "," + nz;
+      if (!seen.has(key) && !e.botCollides(nx, nz)) {
+        seen.add(key);
+        q.push([nx, nz]);
+      }
+    }
+  }
+  ok(seen.size > 500, "Arena walkable: " + a.name + " (" + seen.size + ")");
   e.destroy();
 }
 const e = make({ mode: "training", rule: "trial", target: 30 });

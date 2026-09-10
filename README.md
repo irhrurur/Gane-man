@@ -2,6 +2,30 @@
 
 An original browser FPS and operations hub, built with Next.js App Router, Three.js, PostgreSQL and Drizzle. Real GLB 3D soldier/weapon/vehicle models, an original story, geometric battlefields, synthesized Web Audio effects — and full phone touch controls.
 
+## Run it (how to play)
+
+**Option 1 — play instantly, no install.** Open the live preview link,
+pick **Campaign**, **Multiplayer**, **Co-op Survival**, **The Hollow** or
+**Training Grounds**, then press **DEPLOY NOW**. Works on PC and phones.
+
+**Option 2 — from this zip on your PC.**
+
+1. Install Node.js 20+ from https://nodejs.org
+2. Unzip this file and open a terminal in the folder
+3. `npm install` (first time only)
+4. `npm run dev`, then open http://localhost:3000
+5. Deploy and play. Career progress saves in your browser automatically.
+   Optional: set `DATABASE_URL` to a PostgreSQL database and run
+   `npx drizzle-kit push` for server-backed career + leaderboards.
+
+**Option 3 — on your phone.**
+
+- Same Wi-Fi as your PC: run `npm run dev` on the PC, then open
+  `http://YOUR-PC-IP:3000` in your phone browser (use landscape).
+- Or deploy free (Vercel/Netlify/VPS): `npm run build` → `npm start`,
+  then open the link on your phone and “Add to Home Screen” for
+  fullscreen play.
+
 ## Play
 
 Open the preview and choose **Deploy to Campaign** or **Enter Training Grounds**. The deployment briefing explains controls. Click **Deploy Now** to enter the battlefield.
@@ -60,6 +84,7 @@ send them over and they can be matched to this style).
 
 - 16 individually briefed, replayable campaign operations across city, industrial, desert, laboratory, forest, snow, and horror-themed environments. Reusable encounter systems support elimination, infiltration, capture/extraction, defense, escort, sabotage, and bosses. Final campaign operation offers two story outcomes.
 - 11 offline arena rules: team deathmatch, free-for-all, domination, hardpoint, Blackwire sabotage, core capture, Echo Confirmed collection, Arsenal Run, gunfight, infection, and headquarters.
+- 8 selectable battlefields, including the COMBINE desert fortress and the AQUARIUM underwater facility (glass exhibit halls, rock pillars, coral glow, rising bubbles). Menus, briefings, cinematics and loadout screens use original diorama-style key art in `public/images/`.
 - AI-supported survival with two squadmates, reviving, pickups, score-funded upgrades, boss waves, difficulty choices, wave limits and endless play.
 - Solo horror survival with melee hunters, resource pickups, no passive health regeneration, hidden intel, and boss waves.
 - Live-fire range and six training/challenge configurations.

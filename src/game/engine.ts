@@ -331,6 +331,34 @@ export class Engine {
     this.scene.add(m);
     return m;
   }
+  glass(
+    x: number,
+    y: number,
+    z: number,
+    w: number,
+    h: number,
+    d: number,
+    color: THREE.ColorRepresentation = 0x9fe8e0,
+  ) {
+    const m = new THREE.Mesh(
+      new THREE.BoxGeometry(w, h, d),
+      new THREE.MeshStandardMaterial({
+        color,
+        roughness: 0.15,
+        metalness: 0.4,
+        transparent: true,
+        opacity: 0.32,
+      }),
+    );
+    m.position.set(x, y + h / 2, z);
+    this.scene.add(m);
+    this.obstacles.push({
+      box: new THREE.Box3().setFromObject(m),
+      mesh: m,
+      hp: Infinity,
+    });
+    return m;
+  }
   buildMap() {
     this.makeSurface();
     const env = this.config.environment;
@@ -338,30 +366,33 @@ export class Engine {
       snow = env === "snow",
       forest = env === "forest",
       desert = env === "desert",
-      lab = env === "lab";
+      lab = env === "lab",
+      aqua = env === "aquarium";
     const sky = horror
       ? 0x120c11
-      : snow
-        ? 0x879ba6
-        : desert
-          ? 0x827968
-          : forest
-            ? 0x354a40
-            : 0x3c5159;
+      : aqua
+        ? 0x0a3542
+        : snow
+          ? 0x879ba6
+          : desert
+            ? 0x827968
+            : forest
+              ? 0x354a40
+              : 0x3c5159;
     this.scene.background = new THREE.Color(sky);
     this.scene.fog = new THREE.FogExp2(
       sky,
-      horror ? 0.035 : lab ? 0.02 : 0.012,
+      horror ? 0.035 : lab ? 0.02 : aqua ? 0.022 : 0.012,
     );
     this.scene.add(
       new THREE.HemisphereLight(
-        snow ? 0xe8f7ff : 0xbbd4d2,
+        snow ? 0xe8f7ff : aqua ? 0x9fe8e0 : 0xbbd4d2,
         0x292b26,
         horror ? 0.75 : 1.65,
       ),
     );
     const sun = new THREE.DirectionalLight(
-      desert ? 0xffd19b : 0xc6e1e3,
+      desert ? 0xffd19b : aqua ? 0x7fd8e8 : 0xc6e1e3,
       horror ? 0.4 : 2.5,
     );
     sun.position.set(-25, 45, 20);
@@ -380,7 +411,15 @@ export class Engine {
       78,
       0.3,
       78,
-      snow ? 0xc0cbd0 : desert ? 0x777062 : forest ? 0x333e32 : 0x313b3e,
+      snow
+        ? 0xc0cbd0
+        : desert
+          ? 0x777062
+          : forest
+            ? 0x333e32
+            : aqua
+              ? 0x14343c
+              : 0x313b3e,
     );
     for (let i = -3; i <= 3; i++) {
       this.glow(i * 10, 0.012, 0, 0.04, 0.015, 70, 0x515a57);
@@ -390,7 +429,7 @@ export class Engine {
     this.box(36, 0, 0, 2, 8, 74, 0x424b4d, true);
     this.box(0, 0, -36, 74, 8, 2, 0x424b4d, true);
     this.box(0, 0, 36, 74, 8, 2, 0x424b4d, true);
-    const accent = horror ? 0xfb344b : 0xe5a76c;
+    const accent = horror ? 0xfb344b : aqua ? 0x54e8cf : 0xe5a76c;
     // Four connected sectors, with traversable alleys and protected flanking routes.
     for (let i = 0; i < 4; i++) {
       const x = i % 2 === 0 ? -23 : 23,
@@ -424,6 +463,27 @@ export class Engine {
             horror ? 0x9c2640 : 0x56c7c3,
           );
         }
+      } else if (aqua) {
+        // Glass exhibit hall flanked by rock pillars and glowing coral.
+        this.glass(x, 0, z, 10, 4.5, 9);
+        this.box(x - 5.6, 0, z, 0.9, 7.5, 10, 0x3a4a4e, true);
+        this.box(x + 5.6, 0, z, 0.9, 7.5, 10, 0x3a4a4e, true);
+        this.box(x, 4.5, z, 12, 0.4, 10.5, 0x2b3a3e);
+        for (let j = 0; j < 3; j++) {
+          const cx = x - 3.4 + j * 3.4;
+          this.box(cx, 0, z - 2.6, 1.2, 6, 1.2, 0x4a4640, true);
+          const coral = new THREE.Mesh(
+            new THREE.ConeGeometry(0.9, 2.2, 6),
+            new THREE.MeshBasicMaterial({
+              color: j % 2 ? 0xff7a9c : 0x54e8cf,
+            }),
+          );
+          coral.position.set(cx, 1.1, z + 2.4);
+          this.scene.add(coral);
+          this.glow(cx, 2.7, z + 2.4, 0.5, 0.5, 0.5, j % 2 ? 0xff7a9c : 0x54e8cf);
+        }
+        this.glow(x, 2.2, z + 4.56, 7, 0.15, 0.1, 0x54e8cf);
+        this.glow(x, 0.4, z + 4.56, 7, 0.15, 0.1, 0x2e9db0);
       } else {
         const h = desert ? 5 : 8 + this.rng() * 9;
         this.box(x, 0, z, 10, h, 12, 0x485251, true);
@@ -2053,12 +2113,17 @@ export class Engine {
     }
     if (this.rain && !this.paused) {
       const p = this.rain.geometry.attributes.position;
+      const rising = this.config.environment === "aquarium";
       for (let i = 0; i < p.count; i++) {
         p.setY(
           i,
-          p.getY(i) - dt * (this.config.environment === "snow" ? 1.4 : 19),
+          rising
+            ? p.getY(i) + dt * 2.2
+            : p.getY(i) -
+                dt * (this.config.environment === "snow" ? 1.4 : 19),
         );
-        if (p.getY(i) < 0) p.setY(i, 30);
+        if (rising ? p.getY(i) > 30 : p.getY(i) < 0)
+          p.setY(i, rising ? 0 : 30);
       }
       p.needsUpdate = true;
     }

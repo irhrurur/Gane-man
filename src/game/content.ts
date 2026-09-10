@@ -470,6 +470,8 @@ export const arenas = [
   { name: "PALE RIDGE", environment: "snow" },
   { name: "VERDANT", environment: "forest" },
   { name: "SUBLEVEL 09", environment: "horror" },
+  { name: "COMBINE", environment: "desert" },
+  { name: "AQUARIUM", environment: "aquarium" },
 ];
 export const challenges = [
   {
