@@ -1,0 +1,19 @@
+{
+  "name": "VEILBREAK — Vanguard Operations",
+  "short_name": "VEILBREAK",
+  "description": "Original browser FPS: 16-operation campaign, bot combat, survival, real 3D models and phone touch controls.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0e1213",
+  "theme_color": "#0e1213",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
