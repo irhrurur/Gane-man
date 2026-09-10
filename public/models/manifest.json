@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "generator": "veilbreak-model-factory",
+  "files": [
+    "soldier.glb",
+    "robot.glb",
+    "drone.glb",
+    "hunter.glb",
+    "target.glb",
+    "rifle.glb",
+    "pistol.glb",
+    "heavy.glb",
+    "tree.glb",
+    "crawler.glb"
+  ]
+}
