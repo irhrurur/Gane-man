@@ -24,6 +24,12 @@ buttons do the rest. Play in landscape (sideways).
 
 ## Run it (how to play)
 
+**Option 0 — easiest: one file, double-click.** Open
+`veilbreak-standalone.html` (the whole game in a single file — no
+install, no server, no internet needed after download). Double-click it,
+press **Campaign**, mission 1, **DEPLOY NOW**. To rebuild it after code
+changes: `npm run standalone`.
+
 **Option 1 — play instantly, no install.** Open the live preview link,
 pick **Campaign**, **Multiplayer**, **Co-op Survival**, **The Hollow** or
 **Training Grounds**, then press **DEPLOY NOW**. Works on PC and phones.

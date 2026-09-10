@@ -182,6 +182,59 @@ export class ModelManager {
     return job;
   }
 
+  // Standalone single-file mode: GLB bytes embedded as base64 on
+  // globalThis.__VEIL_MODELS__ by the offline build (file:// can't fetch).
+  private parseEmbedded(file: string): Promise<Cached | null> {
+    const store = (globalThis as Record<string, unknown>).__VEIL_MODELS__ as
+      | Record<string, string>
+      | undefined;
+    const b64 = store?.[file];
+    if (!b64) return Promise.resolve(null);
+    const key = `embedded:${file}`;
+    const hit = this.cache.get(key);
+    if (hit) return Promise.resolve(hit);
+    const pending = this.loading.get(key);
+    if (pending) return pending;
+    const job = this.getLoader()
+      .then(
+        (loader) =>
+          new Promise<Cached | null>((resolve) => {
+            try {
+              const bin = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0));
+              (loader as unknown as { parse: Function }).parse(
+                bin.buffer as ArrayBuffer,
+                '',
+                (gltf: { scene: THREE.Group; animations: THREE.AnimationClip[] }) => {
+                  let skinned = false;
+                  gltf.scene.traverse((o: THREE.Object3D) => {
+                    if ((o as THREE.SkinnedMesh).isSkinnedMesh) skinned = true;
+                  });
+                  resolve({
+                    scene: gltf.scene,
+                    animations: gltf.animations || [],
+                    skinned,
+                  });
+                },
+                () => resolve(null),
+              );
+            } catch {
+              resolve(null);
+            }
+          }),
+      )
+      .then((entry) => {
+        this.loading.delete(key);
+        if (entry && !this.destroyed) this.cache.set(key, entry);
+        return this.destroyed ? null : entry;
+      })
+      .catch(() => {
+        this.loading.delete(key);
+        return null;
+      });
+    this.loading.set(key, job);
+    return job;
+  }
+
   // Ground + normalize a streamed model so any humanoid fits the game rig.
   private normalize(entry: Cached, height: number): void {
     const box = new THREE.Box3().setFromObject(entry.scene);
@@ -302,7 +355,9 @@ export class ModelManager {
         }
         return null;
       }
-      const cached = await this.fetchCached(`/models/${entry.file}`, 9000);
+      const embedded = await this.parseEmbedded(entry.file);
+      const cached =
+        embedded ?? (await this.fetchCached(`/models/${entry.file}`, 9000));
       if (!cached || this.destroyed) return null;
       const object = await this.instantiate(cached);
       this.markHeads(object, cached.skinned);
