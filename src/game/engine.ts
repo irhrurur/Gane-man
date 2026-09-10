@@ -136,6 +136,7 @@ export class Engine {
   extraction = new THREE.Vector3(0, 0, 25);
   rng: () => number;
   rain?: THREE.Points;
+  cloudBank: THREE.Group[] = [];
   flashLight: THREE.PointLight;
   onHud: (h: Hud) => void;
   onFinish: (r: MatchResult) => void;
@@ -359,6 +360,99 @@ export class Engine {
     });
     return m;
   }
+  skyDome(top: THREE.ColorRepresentation, bottom: THREE.ColorRepresentation) {
+    const mat = new THREE.ShaderMaterial({
+      side: THREE.BackSide,
+      depthWrite: false,
+      fog: false,
+      uniforms: {
+        top: { value: new THREE.Color(top) },
+        bottom: { value: new THREE.Color(bottom) },
+      },
+      vertexShader: `varying vec3 vPos; void main(){ vPos = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+      fragmentShader: `uniform vec3 top; uniform vec3 bottom; varying vec3 vPos; void main(){ float h = normalize(vPos).y * 0.5 + 0.5; gl_FragColor = vec4(mix(bottom, top, pow(max(h, 0.0), 0.8)), 1.0); }`,
+    });
+    const dome = new THREE.Mesh(new THREE.SphereGeometry(400, 24, 16), mat);
+    dome.frustumCulled = false;
+    dome.renderOrder = -1;
+    this.scene.add(dome);
+  }
+  mountains(color: THREE.ColorRepresentation) {
+    const mat = new THREE.MeshBasicMaterial({ color, fog: false });
+    for (let i = 0; i < 10; i++) {
+      const a = (i / 10) * Math.PI * 2 + this.rng() * 0.5;
+      const r = 150 + this.rng() * 60;
+      const h = 25 + this.rng() * 45;
+      const m = new THREE.Mesh(
+        new THREE.ConeGeometry(30 + this.rng() * 30, h, 5),
+        mat,
+      );
+      m.position.set(Math.cos(a) * r, h / 2 - 2, Math.sin(a) * r);
+      this.scene.add(m);
+    }
+  }
+  clouds(color: THREE.ColorRepresentation) {
+    const mat = new THREE.MeshBasicMaterial({
+      color,
+      transparent: true,
+      opacity: 0.85,
+      fog: false,
+    });
+    const n = this.settings.quality === "Low" ? 4 : 8;
+    for (let i = 0; i < n; i++) {
+      const g = new THREE.Group();
+      const puffs = 3 + Math.floor(this.rng() * 3);
+      for (let j = 0; j < puffs; j++) {
+        const s = new THREE.Mesh(
+          new THREE.SphereGeometry(4 + this.rng() * 4, 10, 8),
+          mat,
+        );
+        s.position.set(
+          j * 5 - puffs * 2.5 + this.rng() * 2,
+          this.rng() * 2,
+          this.rng() * 4 - 2,
+        );
+        s.scale.y = 0.55;
+        g.add(s);
+      }
+      const a = this.rng() * Math.PI * 2;
+      const r = 90 + this.rng() * 80;
+      g.position.set(Math.cos(a) * r, 45 + this.rng() * 25, Math.sin(a) * r);
+      this.cloudBank.push(g);
+      this.scene.add(g);
+    }
+  }
+  scatter(color: THREE.ColorRepresentation, scale: number) {
+    if (this.settings.quality === "Low") return;
+    const n = this.settings.quality === "Ultra" ? 220 : 120;
+    const mesh = new THREE.InstancedMesh(
+      new THREE.TetrahedronGeometry(0.5),
+      this.material(color),
+      n,
+    );
+    const dummy = new THREE.Object3D();
+    const bx = this.beacon.position.x,
+      bz = this.beacon.position.z;
+    let placed = 0,
+      guard = 0;
+    while (placed < n && guard++ < n * 20) {
+      const x = (this.rng() - 0.5) * 68;
+      const z = (this.rng() - 0.5) * 68;
+      if (this.botCollides(x, z)) continue;
+      if (Math.hypot(x, z - 25) < 4) continue;
+      if (Math.hypot(x - bx, z - bz) < 6) continue;
+      dummy.position.set(x, 0.15, z);
+      dummy.rotation.y = this.rng() * Math.PI * 2;
+      const s = scale * (0.6 + this.rng() * 0.8) * 2;
+      dummy.scale.set(s, s, s);
+      dummy.updateMatrix();
+      mesh.setMatrixAt(placed++, dummy.matrix);
+    }
+    mesh.count = placed;
+    mesh.instanceMatrix.needsUpdate = true;
+    mesh.frustumCulled = false;
+    this.scene.add(mesh);
+  }
   buildMap() {
     this.makeSurface();
     const env = this.config.environment;
@@ -384,6 +478,23 @@ export class Engine {
       sky,
       horror ? 0.035 : lab ? 0.02 : aqua ? 0.022 : 0.012,
     );
+    // Gradient sky dome (one cheap draw call, richer than flat color).
+    this.skyDome(
+      horror
+        ? 0x0a0608
+        : aqua
+          ? 0x052433
+          : snow
+            ? 0x5f8fb4
+            : desert
+              ? 0x3f7fc4
+              : forest
+                ? 0x27473f
+                : lab
+                  ? 0x141f24
+                  : 0x2c4a5e,
+      sky,
+    );
     this.scene.add(
       new THREE.HemisphereLight(
         snow ? 0xe8f7ff : aqua ? 0x9fe8e0 : 0xbbd4d2,
@@ -404,6 +515,11 @@ export class Engine {
     sun.shadow.camera.bottom = -42;
     sun.shadow.normalBias = 0.04;
     this.scene.add(sun);
+    if (this.settings.quality !== "Low") {
+      const fill = new THREE.DirectionalLight(0xffe0b8, 0.5);
+      fill.position.set(30, 20, -30);
+      this.scene.add(fill);
+    }
     this.box(
       0,
       -0.3,
@@ -429,6 +545,9 @@ export class Engine {
     this.box(36, 0, 0, 2, 8, 74, 0x424b4d, true);
     this.box(0, 0, -36, 74, 8, 2, 0x424b4d, true);
     this.box(0, 0, 36, 74, 8, 2, 0x424b4d, true);
+    if (desert || snow) this.mountains(desert ? 0x8a6f52 : 0x9fb4bd);
+    if (desert || snow || forest)
+      this.clouds(desert ? 0xf7ece0 : snow ? 0xffffff : 0xd8e4e8);
     const accent = horror ? 0xfb344b : aqua ? 0x54e8cf : 0xe5a76c;
     // Four connected sectors, with traversable alleys and protected flanking routes.
     for (let i = 0; i < 4; i++) {
@@ -635,6 +754,10 @@ export class Engine {
     intel.userData.intel = true;
     this.scene.add(intel);
     this.drops.push(intel);
+    this.scatter(
+      desert ? 0x9a8567 : aqua ? 0x2b6b72 : snow ? 0xaebfc6 : 0x4c5a52,
+      0.13,
+    );
   }
   makeTarget(x: number, z: number) {
     const group = new THREE.Group();
@@ -2126,6 +2249,12 @@ export class Engine {
           p.setY(i, rising ? 0 : 30);
       }
       p.needsUpdate = true;
+    }
+    if (this.cloudBank.length && !this.paused) {
+      for (const c of this.cloudBank) {
+        c.position.x += dt * 1.2;
+        if (c.position.x > 180) c.position.x = -180;
+      }
     }
     for (let i = this.effects.length - 1; i >= 0; i--) {
       const e = this.effects[i];
