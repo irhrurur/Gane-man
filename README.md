@@ -2,6 +2,26 @@
 
 An original browser FPS and operations hub, built with Next.js App Router, Three.js, PostgreSQL and Drizzle. Real GLB 3D soldier/weapon/vehicle models, an original story, geometric battlefields, synthesized Web Audio effects — and full phone touch controls.
 
+## ▶ Play in 4 steps (super simple)
+
+1. **Open the game.** Use the live preview link, or run it yourself
+   (see “Run it” below) and open the page.
+2. **Pick a mission.** Press **Campaign**, tap mission 1
+   **Dead Frequency**, then press **DEPLOY** (or go to
+   **Training Grounds** → **ENTER THE RANGE** for practice).
+3. **Press DEPLOY NOW.** The match starts right away.
+4. **Fight.** Follow the objective line at the top of the screen
+   (for example “Neutralize 10 hostile operators”).
+   Shoot enemies, hold **E** at glowing orange terminals, stay inside
+   cyan rings, and return to the green ring to extract.
+
+**PC controls:** WASD move · mouse look · left-click fire · right-click
+aim · R reload · Q ability · G grenade · E interact · Esc pause.
+
+**Phone controls:** left stick moves (push far to sprint) · drag the
+right side to aim · hold **FIRE** to shoot · **ADS / JUMP / R / Q / G**
+buttons do the rest. Play in landscape (sideways).
+
 ## Run it (how to play)
 
 **Option 1 — play instantly, no install.** Open the live preview link,
