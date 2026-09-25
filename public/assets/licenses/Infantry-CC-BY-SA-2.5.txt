@@ -1,0 +1,17 @@
+Infantry.glb and its first-person arm mesh adaptation
+Original: Unvanquished human male model and animations, by the Unvanquished team.
+Source: https://github.com/UnvanquishedAssets/res-players_src.dpkdir/tree/master/models/players/human_male
+Media license declaration: https://github.com/Unvanquished/Unvanquished/blob/master/COPYING.txt
+License: Creative Commons Attribution-ShareAlike 2.5
+https://creativecommons.org/licenses/by-sa/2.5/
+Legal code: https://creativecommons.org/licenses/by-sa/2.5/legalcode
+
+Adaptations for Veilbreak: repaired legacy Blender materials, resized texture maps
+and desaturated/recolored uniforms, baked original IK animation clips, selected
+and exported character/armor geometry to GLB. First-person arms extracted using
+skin weights at runtime. These adaptations are distributed under CC BY-SA 2.5.
+No endorsement by the Unvanquished team is implied.
+
+The soldier's share-alike license applies to the adapted soldier resource.
+Other independently licensed assets retain their own licenses. No Unvanquished
+engine code has been imported. Conversion scripts are included in scripts/.

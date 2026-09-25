@@ -1,3 +1,48 @@
+# Iron District resource ledger — latest revision
+
+## New integrated resources
+
+- **Unvanquished human male**: source repository
+  https://github.com/UnvanquishedAssets/res-players_src.dpkdir . Original rig,
+  armor/body/helmet/face textures and animation actions. Source media license:
+  https://github.com/Unvanquished/Unvanquished/blob/master/COPYING.txt .
+  CC BY-SA 2.5, Unvanquished team. Converted soldier and extracted arm meshes
+  retain that license, attribution and change notice. No engine code imported.
+- **Poly Haven CC0 model packs**: modular_factory_facade (James Ray Cock),
+  modular_fire_escape (Juniix), concrete_road_barrier_02 (Amal Kumar), Barrel_01
+  and modular_industrial_pipes_01 (Jorge Camacho), modular_chainlink_fence,
+  utility_box_01 and covered_car (Poly Haven contributors). Creator policy:
+  https://polyhaven.com/license . Source pages use https://polyhaven.com/a/ID .
+- **Poly Haven CC0 surface maps**: asphalt_02 and concrete_floor_worn_001.
+- Public mirrors used only to retrieve these assets via GitHub blobs:
+  ayoub5550/inside-copy- and darkyboys/Drunk-Driving-Simulator. Their game code
+  and unrelated assets were not imported.
+
+`public/assets/military-sources.json` records original paths, blob IDs, original
+checksums, selected Blender objects and output checksums. New model licenses are
+in public/assets/licenses; visible credits are in the game's Field Manual.
+
+## Actual processing, not just downloads
+
+Blender 4.2's Python wheel was installed in an ignored virtual environment.
+Missing desktop runtime libraries were retrieved into ignored cache storage;
+they are not part of the game. Direct source-site downloads and apt were blocked,
+so selected public GitHub copies were used. No private asset library was queried.
+
+Blender inspected the supplied infantry armature, repaired obsolete materials,
+resized and recolored texture maps, baked 12 supplied actions with visual IK
+poses, and exported a skinned GLB. It selected actual factory/window assemblies,
+pipes/fences/props, preserved their UVs, packed images, and generated lower-detail
+exports. The asphalt/concrete surface meshes use the imported photographic maps.
+Runtime axis correction and texture-safe batching were checked in screenshots.
+
+Active resources: 29 GLBs + 3 Ogg samples. Old GLBs remain in the project for
+historical reproducibility but are excluded from the latest single-file game.
+Legacy source documentation below describes the initial prototype, not the
+current live models or the now-working Blender toolchain.
+
+---
+
 # Resource audit and integration ledger
 
 ## Inspected sources and tools

@@ -7,3 +7,6 @@ test-results/
 web-build/
 releases/
 desktop/release/
+
+.venv/
+.cache/

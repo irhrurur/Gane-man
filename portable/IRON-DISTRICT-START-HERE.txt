@@ -1,0 +1,30 @@
+VEILBREAK — IRON DISTRICT
+========================
+This is the updated game, not a Git patch or Windows installer.
+
+1. Extract the ZIP.
+2. Open Veilbreak-Phone.html with your web browser, not a text/preview app.
+3. Rotate your phone sideways.
+4. Choose Training Grounds > Enter the Range > Deploy Now for a quick test,
+   or choose Campaign for mission objectives.
+
+No Node installation, server, account or internet connection is required to
+run this HTML. WebGL2 support is required. Some mobile file viewers refuse to
+execute HTML; use the browser that successfully opened your previous version.
+
+Left stick moves; right-side drag looks. Hold FIRE/USE; tap AIM/CROUCH,
+RELOAD/JUMP/SWITCH/ABILITY/FRAG. Push the move stick farther up to sprint.
+Desktop: WASD/mouse; R reload; E use; Shift sprint; C crouch; Space jump;
+1/2 switch; Escape pause.
+
+This build adds armored human infantry and a textured 160m industrial compound
+with five walk-in objective rooms. It remains a prototype, not BO3 fidelity.
+Phone controls and offline startup were tested in Chromium touch emulation;
+physical-phone FPS has not been measured. Hand grips still need refinement.
+
+Infantry and adapted hand meshes: Unvanquished team, CC BY-SA 2.5.
+Environment assets: Poly Haven, CC0. Weapons/aircraft: Quaternius, CC0.
+Sound samples: Kenney, CC0. Licenses and source manifest are included and
+embedded in the HTML. Visible credits: Field Manual > Asset Credits.
+Code, asset ledger and Blender conversion scripts:
+https://github.com/irhrurur/Gane-man/tree/arena/01a0da55-gane-man

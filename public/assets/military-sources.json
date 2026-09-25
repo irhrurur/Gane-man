@@ -1,0 +1,922 @@
+{
+  "militaryModel": [
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/human_male.blend",
+      "blob": "1334840123967a2ad980357a945d133978fde26b"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/base.png",
+      "blob": "7ecefd1a6f6edf5f5cfdb8325ea00a3fc8dff8d4"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/base_n.png",
+      "blob": "ccb50697cf9aa86f222e7306e0914272961b2cd6"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/armor_medium.png",
+      "blob": "5132e68fa48e84c9b8206830475c6e7bab2c3b0d"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/armor_n.png",
+      "blob": "fb737c91aba0b82cedc6588ec2e34559cbed9f4c"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/head.jpg",
+      "blob": "8caae61643b6667ef793bc315232708aa44bbe43"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/head_n.jpg",
+      "blob": "5c6f2d0c3144e2585dc6af13f563bbb48d29bf45"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/helmet_medium.png",
+      "blob": "f879289e6a50f44d736673bb3b0bd02b1e69438a"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/helmet_n.png",
+      "blob": "b678867a49fcef0d976b913afc20025870b7a1d6"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/animations.txt",
+      "blob": "824fe9b75ad4d0167d32b595481177389f269eed"
+    },
+    {
+      "repository": "UnvanquishedAssets/res-players_src.dpkdir",
+      "path": "models/players/human_male/body_medium.skin",
+      "blob": "c1983503044ad5bd1fde8177a47782f09ac5bac7"
+    }
+  ],
+  "environmentModels": [
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/modular_factory_facade_1k.gltf",
+      "blob": "ae98d3316b30031aad34859537d98a966ffa8e17",
+      "sha256": "41ff58b722f9cb3e9db8bcacae3163946603ae99a1d42bb6f9045d7c4ec0f179",
+      "bytes": 372666,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/modular_factory_facade.bin",
+      "blob": "b5f7e43e373971c6cb75c30b8979d10a62c48d08",
+      "sha256": "12702fb065a838695e0621e1aac3947af92d32c439fb965c8b0563ad691fed70",
+      "bytes": 6269260,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_trim_01_nor_gl_1k.jpg",
+      "blob": "cf1da7a80364a2d1d64cfb06741e554b42e970ac",
+      "sha256": "05441cf545c9d5f6786cd191e9b3b627668b1176e155d1fae7fbe28f6a8d3802",
+      "bytes": 827556,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_trim_01_diff_1k.jpg",
+      "blob": "3f593837e74f9371dad41b787af0792555b35390",
+      "sha256": "beff49832938c5493a4b5bbb82eeabd138c29c6523e5228e006f702859bbc87f",
+      "bytes": 617348,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_trim_01_arm_1k.jpg",
+      "blob": "63dd74845b9a890cb48dc33755fefb85efafcd98",
+      "sha256": "0ab1657c75a9b5beb3d5552adfafccdd5174c391f20ccd6c0b41939c1a8bfe3f",
+      "bytes": 733418,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_windows_nor_gl_1k.jpg",
+      "blob": "f24b78bf93bed6f6a1ec21f30f5c0bb38505c405",
+      "sha256": "4dc9e4a6b97d5384849faeebca87eae9f6736664971c6c10a41fc19bd01fc106",
+      "bytes": 612643,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_windows_diff_1k.jpg",
+      "blob": "86f23bdba1221899a72a1f64b3db9cfb9d84b23d",
+      "sha256": "d361dacbd23095dacf1d82eb5a509a305c44b007f8adfb221dc2e5efe56180e0",
+      "bytes": 619613,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_windows_arm_1k.jpg",
+      "blob": "7a04ee07b7e277d52db05610bfcbcf95b3759030",
+      "sha256": "7bfc0d579188dd88bb2d8962ae81402e6ccabff244709e68ba3be4cc5d500d0d",
+      "bytes": 873236,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_windows_diff_1k.jpg",
+      "blob": "86f23bdba1221899a72a1f64b3db9cfb9d84b23d",
+      "sha256": "d361dacbd23095dacf1d82eb5a509a305c44b007f8adfb221dc2e5efe56180e0",
+      "bytes": 619613,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_garage_nor_gl_1k.jpg",
+      "blob": "6a4014f56f93c68aa96dc54ba1c436324d065164",
+      "sha256": "e8ac6265622fb8c8df454ae02a75746bc37ded0d4533dbe65fa275d0e40f28ba",
+      "bytes": 752068,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_garage_diff_1k.jpg",
+      "blob": "371e813a309c356c847163bb2d8b18f947d82b92",
+      "sha256": "d1cf6239c7364900b02279600937a4c9bf0a21d315efabf18f16d5637020e39f",
+      "bytes": 588149,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_garage_arm_1k.jpg",
+      "blob": "bd069004a84c6d2902a34c682ccca83894502d44",
+      "sha256": "a72cfa9020a0a7aad2476b2ceb3c60dc21ac69d4e9026dcddc82710e6784b40f",
+      "bytes": 682331,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_brick_nor_gl_1k.jpg",
+      "blob": "ed4d9803cadb94e86d88b220ecb414b663163927",
+      "sha256": "1168796e949c5ce3957142e86bce1d09531466aaea90dc46cbc3f3225cbdd78e",
+      "bytes": 1052229,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_brick_diff_1k.jpg",
+      "blob": "446e012f516281d93ebfd5ebf231d1d26e8fe3c1",
+      "sha256": "852b01c61efc07fd8e60e59767657ef51112bf65f5eaf184f02c27ea5170582d",
+      "bytes": 1115986,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_brick_arm_1k.jpg",
+      "blob": "fb145ccc0fcc8f170b718c7977d41041c6394972",
+      "sha256": "322cba4e6b03e39fa2a57335deddfbda6d819f8b29b108b9000790ded99b0d95",
+      "bytes": 726245,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_doors_nor_gl_1k.jpg",
+      "blob": "c060f6b29888774078b50096293616d706117913",
+      "sha256": "1e3bdff6d4b30cb26e901d6d14e42d398aeacfb46767900404eb38ec5ba016dc",
+      "bytes": 488916,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_doors_diff_1k.jpg",
+      "blob": "74f43b2a95e25efb7538b9b7ab4d67456344bbba",
+      "sha256": "157b59b9d1c929e51e2747f4f9481389743acba539308cecbb98c17294b6c7e1",
+      "bytes": 570733,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_factory_facade/textures/modular_factory_facade_doors_arm_1k.jpg",
+      "blob": "a5de45f906dd5729812715756253fc5aada67f99",
+      "sha256": "794b16de5bd2aae6431fd8aee7b10b3b1095bbe89b233a158a1e031e0a27c4e3",
+      "bytes": 723782,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/concrete_road_barrier_02/concrete_road_barrier_02_1k.gltf",
+      "blob": "d5848a74dfefd0f72f00416b41197b393ed1622b",
+      "sha256": "52d13b5105ce861db5dd1413a1a924ad5594dee5a8eb37dbe1a9df441fcd7caf",
+      "bytes": 2910,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/concrete_road_barrier_02/concrete_road_barrier_02.bin",
+      "blob": "fd2a8ef5eae99f4af6f4d097e5150a2094f15016",
+      "sha256": "254ee05467733e224e127dc76e019e5b5211c0da4248fa3fc75117ec005d7c90",
+      "bytes": 542900,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/concrete_road_barrier_02/textures/concrete_road_barrier_02_nor_gl_1k.jpg",
+      "blob": "070c6eace9c1c29ee6425ceb89f4e4227971e6bc",
+      "sha256": "42ec702843df209f0aef1d247c76dfb91385f0bf3b226b752d22a4c0e3780a31",
+      "bytes": 923479,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/concrete_road_barrier_02/textures/concrete_road_barrier_02_diff_1k.jpg",
+      "blob": "5e6e2e17fec465704aa978d19f85d9c38c786116",
+      "sha256": "9329260ebfc8632a5d47d9b344ab6f916e26604e73ebd2c495fee544df4bdefa",
+      "bytes": 741673,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/concrete_road_barrier_02/textures/concrete_road_barrier_02_arm_1k.jpg",
+      "blob": "aa44169ba603aa953951af27306673eb47c7be93",
+      "sha256": "6fb282f242ce86a3e44663678c2e0366c37de8244b08acc003d99771cb780e53",
+      "bytes": 717138,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/Barrel_01/Barrel_01_1k.gltf",
+      "blob": "dacf569133759287bb2f39fba1b416983f650fc5",
+      "sha256": "e084945dedd6a3379c6f3e97842cac89df7169797707e123a5e5b42c135d6888",
+      "bytes": 2711,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/Barrel_01/Barrel_01.bin",
+      "blob": "933c4a4942e0b57f3f2d004fc53cd11bff5807e0",
+      "sha256": "fe8369c1ac796059b62a091c0db7367dc420aa2cee212672e48f991f4208da98",
+      "bytes": 81756,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/Barrel_01/textures/Barrel_01_explosive_nor_gl_1k.jpg",
+      "blob": "e0ccc4ab0be43bdbe0e9562d11448b5e69ece7e7",
+      "sha256": "fa4750d64c6f568c8de3e36bc631348710329cf2d6d9c8c87bd2e47a96bc4fcb",
+      "bytes": 185578,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/Barrel_01/textures/Barrel_01_explosive_diff_1k.jpg",
+      "blob": "cfc56bb7c4341e31551c2e26d6c2ec0d8829ae89",
+      "sha256": "a7e5a7b03bbe0c9c56bf1ac09b24121a5d19148428e9e6eac326c803fc297098",
+      "bytes": 179308,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/Barrel_01/textures/Barrel_01_explosive_arm_1k.jpg",
+      "blob": "cb1e4a379556b6f74e72f9056165e0ccaf4b0d62",
+      "sha256": "eab507df7719f0e7a3615bd22bb7bc0c09fed83bfc44e72a51451f8069c2d374",
+      "bytes": 243594,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_fire_escape/modular_fire_escape_1k.gltf",
+      "blob": "ed80d2f9b05a951b1e42222d53af2a8630ba5d98",
+      "sha256": "3a28e24cf2b6fc32c86f4fd378a372f9c3babfb9c2206036c6276d5bb47df2fd",
+      "bytes": 13672,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_fire_escape/modular_fire_escape.bin",
+      "blob": "715e328fce0826ab135ab257c476068a367d7e8d",
+      "sha256": "5173033f47b33cbfe47fb38fb18ad99e6d78070ab7e1faf6fcc5a002afe98728",
+      "bytes": 515356,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_fire_escape/textures/modular_fire_escape_01_nor_gl_1k.jpg",
+      "blob": "30e8ad060d91b23151f5fee945a2318fd673e101",
+      "sha256": "2db2bfc1d9d487cec32f68a846883ded440a1d10a328d81d8dcc522be45e7734",
+      "bytes": 685951,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_fire_escape/textures/modular_fire_escape_01_diff_1k.jpg",
+      "blob": "ccab647b8548df467dcabe15448a5018f4e45dd1",
+      "sha256": "50b15363269bee95c4c4aeb54a4a4df31a3e52680877fe286259c92885c17b74",
+      "bytes": 591379,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_fire_escape/textures/modular_fire_escape_01_arm_1k.jpg",
+      "blob": "a2fe3d51a88e6ce83509b9f9683626bd596b628a",
+      "sha256": "ca4ada942209b9b880b180f0646e1bf7c86f46b7599b12ff56b4ef6ad533c44d",
+      "bytes": 711858,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_fire_escape/textures/modular_fire_escape_02_nor_gl_1k.jpg",
+      "blob": "006922ce50d32e6493039d68619a75a7f886ca94",
+      "sha256": "d9024407844f8baf514d005354ea4a729aff3659753e36cbab92fb09d0df3565",
+      "bytes": 939689,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_fire_escape/textures/modular_fire_escape_02_diff_1k.jpg",
+      "blob": "fa203dd3aac2b1762f36c00e9ba207f82ff2fd74",
+      "sha256": "9e969f5912b61aee6a6aa6dac3d98a4be3a4c92bf3b8f71e80fedc068493aa18",
+      "bytes": 615280,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_fire_escape/textures/modular_fire_escape_02_arm_1k.jpg",
+      "blob": "6d5ca29823095e6c88d2d0818c6ba7b1315bccce",
+      "sha256": "b4b65ebcd05e6c4502240a46eebd6535e9f83c0c65e0baaebaf25dae207c7c95",
+      "bytes": 732941,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_industrial_pipes_01/modular_industrial_pipes_01_1k.gltf",
+      "blob": "a674e4e196be93ee35c77e4a5ed123d904bb99c2",
+      "sha256": "455d3a0fe95b7900a08cbebb23cfb2c341672fcb67ae7355d776e53cfa3d0688",
+      "bytes": 15014,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_industrial_pipes_01/modular_industrial_pipes_01.bin",
+      "blob": "48b5cdf186621bd3dd0c5d313d73cd3da49de4f3",
+      "sha256": "2e11e1a7dabd56b1e158364f48b0b388bf316fcab61a01274740db75dbafa448",
+      "bytes": 515160,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_nor_gl_1k.jpg",
+      "blob": "3a5a1d9f86861ead73ed9635471fe21f6938b782",
+      "sha256": "ed4728fde567efe420e3a6e1bdc4238b26c2782218737c7e2de88eeca1e91fb2",
+      "bytes": 674568,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_diff_1k.jpg",
+      "blob": "d000696ca604ebf1efa64a9c66ed9c08f1cd3ce9",
+      "sha256": "c0233f66b18e3374dfbbb8c8078a41f6571a0809d3eb14dd9d3c332265cfde7b",
+      "bytes": 553576,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_arm_1k.jpg",
+      "blob": "2e40c6c26440142c431557226ad5b73e3c0f5c45",
+      "sha256": "7fff7d4604491eeb7531ad5f7520517015c72ec7316d1e865d62f23f976dfed6",
+      "bytes": 860825,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_nor_gl_1k.jpg",
+      "blob": "1b525a6f8004432065f90d57710b9707c5033bb0",
+      "sha256": "84a43ca11a4f1ac84f7fc8336a4e9b7b333d30c13e540f3ff42e662dc6f91b53",
+      "bytes": 725187,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_diff_1k.jpg",
+      "blob": "76e7ca9249d5806393830526c4c7bd77b7e83a34",
+      "sha256": "ef8a75c402a8871903dcaa147b023d57c640d0de4c7a8acdfdee822861656a92",
+      "bytes": 580676,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_arm_1k.jpg",
+      "blob": "c7800afbc2973668de3f98586b0d0d9f7924d24c",
+      "sha256": "4c65dcb651a3d345517fa93ad7c6e48f2388f4e8bb347446f70317c16049867b",
+      "bytes": 898932,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_chainlink_fence/modular_chainlink_fence_1k.gltf",
+      "blob": "ae75f25eb22bd7d4be95c41fb9b6c4e24a8a9621",
+      "sha256": "4204f151f809b4abd41ea0b18b1b6a5d9c23e6bcc0b6a81e44d03690f26604e9",
+      "bytes": 41838,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_chainlink_fence/modular_chainlink_fence.bin",
+      "blob": "a962a2497bf9afc486d687b6e8bf827cb9e8a9ef",
+      "sha256": "be9ea1817089fd35b0927a8271358f6abd2ec80b306a085de435613d936fcb9a",
+      "bytes": 3168016,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_chainlink_fence/textures/modular_chainlink_fence_posts_nor_gl_1k.jpg",
+      "blob": "b9b6d352cb618cbd7e316a9f0b1d54d008737178",
+      "sha256": "b43b8214c90a55bb84222d2a27430b31080d68dc14879632b86dbd316cb5f060",
+      "bytes": 505743,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_chainlink_fence/textures/modular_chainlink_fence_posts_diff_1k.jpg",
+      "blob": "fa45d6b022d1e87b64231d58b3a5c8b5f16522e4",
+      "sha256": "ec273fedef04fbcac26460b996beeeceeff3f91c1bea73ed2c6db1d0fdb30b73",
+      "bytes": 707116,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_chainlink_fence/textures/modular_chainlink_fence_posts_arm_1k.jpg",
+      "blob": "2d34210b463fdcdd9bfd8e1e2a10f6b93cde5852",
+      "sha256": "1694ecc2746ddaa93951ea5d2f2b830f544adf929f7ac9fae855f8b8fdfbad50",
+      "bytes": 839858,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_chainlink_fence/textures/modular_chainlink_fence_wire_nor_gl_1k.jpg",
+      "blob": "2b39e76388397ebe2afb7e291f8f1ba8ab8b0da7",
+      "sha256": "5cbf280f80e948de2422f0bb2fe2223a3b6f8e6fc75f54b00cd8d3e070938230",
+      "bytes": 664165,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_chainlink_fence/textures/modular_chainlink_fence_wire_diff_1k.jpg",
+      "blob": "5b9a089ab316b28b9f0eb4d6b0c332732cf2a201",
+      "sha256": "79253847a00b67a616148d753df8f4e44ba4615f848b82310426618b5a8dd79b",
+      "bytes": 670536,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/modular_chainlink_fence/textures/modular_chainlink_fence_wire_arm_1k.jpg",
+      "blob": "f9096ab9357b6bfba1408376091147827c9755e5",
+      "sha256": "88af8364890b0645cd730eca11b30e6cd1c7578ad3aa1f012bb84915b9be5a03",
+      "bytes": 694743,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/utility_box_01/utility_box_01_1k.gltf",
+      "blob": "0f3cdd2623de086f6abfa596f59a2df76e9f0cd9",
+      "sha256": "5b9f8c45f2640c9dd831dc3450529e45b24c987208ddcf73010fe717ce8c454e",
+      "bytes": 2766,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/utility_box_01/utility_box_01.bin",
+      "blob": "2095bb34802ac7c461704298fff20505a53ea918",
+      "sha256": "e4249eb754d7802154eed36bb12070dc24c90fc331f355d60ef7570d61fc0f5c",
+      "bytes": 142552,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/utility_box_01/textures/utility_box_01_nor_gl_1k.jpg",
+      "blob": "08801d3b98ba2046b0f8c2c41170f5a421c12d75",
+      "sha256": "1c4e377906c13e864c9c7ffbd31a7d86075f28b948bf54872d6ad3ab38a08124",
+      "bytes": 557001,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/utility_box_01/textures/utility_box_01_diff_1k.jpg",
+      "blob": "173f5620742e72bbd11c5d79b2585b33694448e4",
+      "sha256": "6a703a4cdf20c3fc3d0400fa815e5a1834836c96c207bdb57ba9e4a5db3a5532",
+      "bytes": 558681,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/utility_box_01/textures/utility_box_01_arm_1k.jpg",
+      "blob": "75c99e9f677d8b9d2f9de5ce3a8f35a00df4f885",
+      "sha256": "e65428774e94b6a8aeb7a23802e0af8f1568952ea79e21a7a3475b957e34956b",
+      "bytes": 716061,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/covered_car/covered_car_1k.gltf",
+      "blob": "0441c346f0d57ad7854cf46ee7d38b985d1ccbf8",
+      "sha256": "80b210b08673833a8085812b9ee71286213b2af92654886e5a1a368977265aa7",
+      "bytes": 9687,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/covered_car/covered_car.bin",
+      "blob": "44cdf96c80d05c958e34c84f75e0e4c5e880bb45",
+      "sha256": "dcbd7bf82d415e30d02c3e7056013b44729de7b712868b5ab9bf29f2b3b8bc57",
+      "bytes": 394464,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/covered_car/textures/covered_car_nor_gl_1k.jpg",
+      "blob": "a30094c4b0139863f31bb16eeb55a2136529df0d",
+      "sha256": "6769694abe28c53e5c35ad1cefdd462b56416e7d89a6bcf5a9d9f6c922b46d05",
+      "bytes": 641340,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/covered_car/textures/covered_car_diff_1k.jpg",
+      "blob": "264a957622d616a6faab4cb2106578bb79eafc70",
+      "sha256": "c4616a5c7c1327e4bc127b600e59d9dcb2123f8926f1570a1ca4a068d97f4d34",
+      "bytes": 558004,
+      "license": "CC0-1.0"
+    },
+    {
+      "repository": "ayoub5550/inside-copy-",
+      "path": "assets/ph/models/covered_car/textures/covered_car_arm_1k.jpg",
+      "blob": "dac43f1f1feccb520c0ad36defcbf0e722c4490d",
+      "sha256": "e77f73234311701dd8088ec572e61d4ec7838bd28e9ea13ffe5e28f79da8e085",
+      "bytes": 745781,
+      "license": "CC0-1.0"
+    }
+  ],
+  "surfaceMaps": {
+    "repository": "darkyboys/Drunk-Driving-Simulator",
+    "files": [
+      {
+        "path": "assets/materials/raw/polyhaven/asphalt_02_diff_1k/asphalt_02_diff_1k.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7c65f3c82a8dcda3aca83f19c46539e46fe01e42",
+        "size": 2485545,
+        "url": "https://api.github.com/repos/darkyboys/Drunk-Driving-Simulator/git/blobs/7c65f3c82a8dcda3aca83f19c46539e46fe01e42"
+      },
+      {
+        "path": "assets/materials/raw/polyhaven/asphalt_02_diff_1k/asphalt_02_nor_gl_1k.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "02621924566f21516558be7561d70fc84773de71",
+        "size": 2323825,
+        "url": "https://api.github.com/repos/darkyboys/Drunk-Driving-Simulator/git/blobs/02621924566f21516558be7561d70fc84773de71"
+      },
+      {
+        "path": "assets/materials/raw/polyhaven/asphalt_02_diff_1k/asphalt_02_rough_1k.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9f46c68305e6f19134b14bf2744e684976988c0d",
+        "size": 732747,
+        "url": "https://api.github.com/repos/darkyboys/Drunk-Driving-Simulator/git/blobs/9f46c68305e6f19134b14bf2744e684976988c0d"
+      },
+      {
+        "path": "assets/materials/raw/polyhaven/concrete floor/concrete_floor_worn_001_diff_1k.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1a822c7585d2021328352d62738280f99686327c",
+        "size": 5252392,
+        "url": "https://api.github.com/repos/darkyboys/Drunk-Driving-Simulator/git/blobs/1a822c7585d2021328352d62738280f99686327c"
+      },
+      {
+        "path": "assets/materials/raw/polyhaven/concrete floor/concrete_floor_worn_001_nor_gl_1k.png",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eed3d708f5c08a2a12a3209b17d018714b7e5688",
+        "size": 5535944,
+        "url": "https://api.github.com/repos/darkyboys/Drunk-Driving-Simulator/git/blobs/eed3d708f5c08a2a12a3209b17d018714b7e5688"
+      }
+    ]
+  },
+  "blenderSelections": [
+    {
+      "model": "FactoryWindow",
+      "pack": "modular_factory_facade",
+      "selectedObjects": [
+        "wall_window_centered_large_01",
+        "window_centered_large_01"
+      ],
+      "bytes": 689312,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "FactoryWall",
+      "pack": "modular_factory_facade",
+      "selectedObjects": [
+        "wall_standard_standard_01"
+      ],
+      "bytes": 177564,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "FactoryGarage",
+      "pack": "modular_factory_facade",
+      "selectedObjects": [
+        "wall_door_garage_centered_01",
+        "door_garage_centered_01"
+      ],
+      "bytes": 448576,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "FactoryCornice",
+      "pack": "modular_factory_facade",
+      "selectedObjects": [
+        "crown_standard_standard_01"
+      ],
+      "bytes": 85344,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "FactoryPillar",
+      "pack": "modular_factory_facade",
+      "selectedObjects": [
+        "wall_pier_corner_01"
+      ],
+      "bytes": 185296,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "RoadBarrier",
+      "pack": "concrete_road_barrier_02",
+      "selectedObjects": [
+        "concrete_road_barrier_02"
+      ],
+      "bytes": 205964,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "OilBarrel",
+      "pack": "Barrel_01",
+      "selectedObjects": [
+        "Barrel_01"
+      ],
+      "bytes": 203848,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "FireStairs",
+      "pack": "modular_fire_escape",
+      "selectedObjects": [
+        "modular_fire_escape_stairs"
+      ],
+      "bytes": 331764,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "FirePlatform",
+      "pack": "modular_fire_escape",
+      "selectedObjects": [
+        "modular_fire_escape_platform_bottom"
+      ],
+      "bytes": 157716,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "FireRail",
+      "pack": "modular_fire_escape",
+      "selectedObjects": [
+        "modular_fire_escape_platform_railing"
+      ],
+      "bytes": 114904,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "IndustrialPipe",
+      "pack": "modular_industrial_pipes_01",
+      "selectedObjects": [
+        "modular_industrial_pipes_01_pipe02"
+      ],
+      "bytes": 138544,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "PipeElbow",
+      "pack": "modular_industrial_pipes_01",
+      "selectedObjects": [
+        "modular_industrial_pipes_01_pipe03"
+      ],
+      "bytes": 148636,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "SecurityFence",
+      "pack": "modular_chainlink_fence",
+      "selectedObjects": [
+        "modular_chainlink_fence_double",
+        "modular_chainlink_fence_post"
+      ],
+      "bytes": 634204,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "UtilityBox",
+      "pack": "utility_box_01",
+      "selectedObjects": [
+        "utility_box_01_box"
+      ],
+      "bytes": 241084,
+      "license": "CC0-1.0"
+    },
+    {
+      "model": "CoveredCar",
+      "pack": "covered_car",
+      "selectedObjects": [
+        "covered_car",
+        "covered_car_wheel_01",
+        "covered_car_wheel_02",
+        "covered_car_wheel_03",
+        "covered_car_wheel_04"
+      ],
+      "bytes": 517152,
+      "license": "CC0-1.0"
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "file": "Infantry.glb",
+      "sha256": "b958b66096813f69d4f21ba74268afd1e89150b9ba2c9e14759972cb12565b79",
+      "bytes": 2212884,
+      "license": "CC-BY-SA-2.5"
+    },
+    {
+      "file": "FactoryWindow.glb",
+      "sha256": "ca5b4986d7f68f5a4782c6e268df9ef3a82b317305fbe5157c19970d4942e389",
+      "bytes": 689312,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "FactoryWall.glb",
+      "sha256": "7d82b5384893056145cfb6432d030b82e51f65828531426005a0049153201d25",
+      "bytes": 177564,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "FactoryGarage.glb",
+      "sha256": "c54f90a94542e6ed8595d611871b842860917c3ef6b8d1320e396235ac5f3192",
+      "bytes": 448576,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "FactoryCornice.glb",
+      "sha256": "4a5213f7c8703ad80477a91740b16f49a67721a80793221fc85b7554f1f2458b",
+      "bytes": 85344,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "FactoryPillar.glb",
+      "sha256": "9e852d4aab3e70fdbaba20f659679abcdc53648ca0e458716f59a811799421b0",
+      "bytes": 185296,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "RoadBarrier.glb",
+      "sha256": "46080af8dcd01c9609c676e04119b42c99372077af85f35ff39f8761d7524625",
+      "bytes": 205964,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "OilBarrel.glb",
+      "sha256": "9e96a45b406031c95d6a9b89db6ef07bd040786d6291b2d5c544517ca7c532c9",
+      "bytes": 203848,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "FireStairs.glb",
+      "sha256": "49f2e551e09b2dbd89bb0e2842ce16c84e6628743bdef03e80b143b4f0be3598",
+      "bytes": 331764,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "FirePlatform.glb",
+      "sha256": "20d1da2b0af31fd85b27a750becb599635515ab34c609f5560c4a978dd4a1d86",
+      "bytes": 157716,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "FireRail.glb",
+      "sha256": "c04d28f1395107f09102718f0933b3d6c2ebcec8be05e34c0a538c70aa388040",
+      "bytes": 114904,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "IndustrialPipe.glb",
+      "sha256": "7f510dc8cfdb27d69624fb241725a7126e4f50856a0f8a889c9e4007b09a58d6",
+      "bytes": 138544,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "PipeElbow.glb",
+      "sha256": "d175bb5c5b041a090ed402d9646b5b3d7588d0bd8a1b138877f237d31cec499e",
+      "bytes": 148636,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "SecurityFence.glb",
+      "sha256": "177f248f596b5b3ab55eb054475674955c2d6cc7b0fd301e8f151711961d8862",
+      "bytes": 634204,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "UtilityBox.glb",
+      "sha256": "8cd6f2cc0ee4c52d6b3211d6f5d53c632a906fcebac98893d82c1569e139fbb6",
+      "bytes": 241084,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "CoveredCar.glb",
+      "sha256": "c95d7e793f9f11615325e7ef892cd16042facaae09996cf35f10f808307292cc",
+      "bytes": 517152,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "AsphaltTile.glb",
+      "sha256": "1ecd8fdbecfa2a7e815b6b719599773371d3c679eefa33b713e7cb0684ddecb9",
+      "bytes": 306876,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "ConcreteTile.glb",
+      "sha256": "dff255e7e94127d152356301492bb0dc2e07bff6c7a70a53324a17369e4123e7",
+      "bytes": 73392,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "Enemy_Flying.glb",
+      "sha256": "7e3a27532b43807b375e3d3ad9cbe1f7e20d8bb723f2dcc2a3c9efb38da73a5b",
+      "bytes": 298324,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "Dispatcher.glb",
+      "sha256": "92032a847042ce2f51528feae31f1eb0caca0cda7b0059732343396243fb860d",
+      "bytes": 2373424,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "AR_1.glb",
+      "sha256": "0370edb381d2f298efbc9ac7dd4ec11d22d3b0137bb135df1b89a2a284af9125",
+      "bytes": 98500,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "SMG_1.glb",
+      "sha256": "4a92c6765ce2e7688afd962ec1b741c95ace183a90d448d7e094a342d62114f2",
+      "bytes": 83956,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "Sniper_1.glb",
+      "sha256": "f802c0ba8fbc02e87329883b8486ed50c1f7d12eb2b0e5604ffcf247e77dfcd5",
+      "bytes": 125128,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "Shotgun_1.glb",
+      "sha256": "f10b4e29e8d011c3c8b193c9354c1034121ab5606b1118feff7f2b9cd95f19b2",
+      "bytes": 70432,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "AR_4.glb",
+      "sha256": "d249dddf433609cccf01d1abe4f8f13d9eee4e1ba33a4bd9617598e6e6a0af60",
+      "bytes": 195268,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "AR_3.glb",
+      "sha256": "a233a442a21c7889f583002f8ea7213cbe3ae926ba30531a6f3b954bad463d1e",
+      "bytes": 104100,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "Pistol_1.glb",
+      "sha256": "1b0bdaba36a69f4c9821a10da5234c032283fca3d8ffec6445c7a6e352e3127a",
+      "bytes": 71524,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "AR_2.glb",
+      "sha256": "f83ac0b0d52f97c22c6615034ebf8dc8c2b9725989e2e998aa7b603c3abad2cd",
+      "bytes": 98232,
+      "license": "CC0-1.0"
+    },
+    {
+      "file": "Grenade_1.glb",
+      "sha256": "3d460d09020709590d2e29216285a95b997f13eb285fb227e9a0682dd7d4d80c",
+      "bytes": 70832,
+      "license": "CC0-1.0"
+    }
+  ]
+}

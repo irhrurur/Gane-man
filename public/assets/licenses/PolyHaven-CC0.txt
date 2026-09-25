@@ -1,0 +1,18 @@
+Imported Poly Haven models and textures are CC0 1.0 Universal.
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Creator's policy: https://polyhaven.com/license
+
+Modular Factory Facade — James Ray Cock
+Modular Fire Escape — Juniix
+Concrete Road Barrier 02 — Amal Kumar
+Barrel_01 — Jorge Camacho
+Modular Industrial Pipes 01 — Jorge Camacho
+Modular Chainlink Fence, Utility Box 01, Covered Car — Poly Haven contributors
+Asphalt 02, Concrete Floor Worn 001 — Poly Haven contributors
+
+Models retrieved from public copies in ayoub5550/inside-copy-; surface maps
+from darkyboys/Drunk-Driving-Simulator. Only reviewed Poly Haven resources were
+selected. No game code or other content from those repositories was imported.
+Source files and blob IDs are listed in military-sources.json.
+Blender adaptations: module selection, transform normalization, 512px texture
+packing, planar simplification and mobile-detail reduction.
