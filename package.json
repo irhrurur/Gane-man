@@ -1,0 +1,48 @@
+{
+  "name": "nextjs-postgresql-template",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "node tests/engine.cjs",
+    "test:assets": "node tests/assets-browser.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "build:web": "vite build",
+    "play:web": "node scripts/serve-web.cjs web-build",
+    "test:portable": "node tests/portable-browser.cjs",
+    "package:game": "npm run build:web && python3 scripts/package-game.py",
+    "build:single": "npm run build:web && node scripts/build-single-html.mjs",
+    "test:phone": "node tests/phone-html.cjs"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/three": "^0.185.4",
+    "dotenv": "17.3.1",
+    "drizzle-orm": "0.45.2",
+    "lucide-react": "^1.43.0",
+    "next": "^16.3.6",
+    "pg": "8.20.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@sparticuz/chromium": "^153.0.0",
+    "@tailwindcss/postcss": "4.1.17",
+    "@types/node": "22.19.15",
+    "@types/pg": "8.18.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "drizzle-kit": "0.31.10",
+    "esbuild": "^0.28.2",
+    "eslint": "9.39.4",
+    "eslint-config-next": "^16.3.6",
+    "postcss": "^8.5.28",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3",
+    "vite": "^8.3.1"
+  }
+}

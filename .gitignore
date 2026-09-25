@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.env*
+*.tsbuildinfo
+test-results/
+
+web-build/
+releases/
+desktop/release/

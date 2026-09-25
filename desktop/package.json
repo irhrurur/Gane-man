@@ -1,0 +1,17 @@
+{
+  "name":"veilbreak-desktop",
+  "version":"0.1.0",
+  "description":"Veilbreak FPS local desktop edition",
+  "author":"Veilbreak contributors",
+  "main":"main.cjs",
+  "private":true,
+  "scripts":{"build:win":"electron-builder --win portable --x64"},
+  "devDependencies":{"electron":"^41.0.0","electron-builder":"^26.0.0"},
+  "build":{
+    "appId":"game.veilbreak.desktop","productName":"Veilbreak",
+    "directories":{"output":"release"},
+    "files":["main.cjs","package.json",{"from":"../web-build","to":"web","filter":["**/*"]},{"from":"../scripts/serve-web.cjs","to":"serve-web.cjs"}],
+    "win":{"target":["portable"],"signAndEditExecutable":false},
+    "artifactName":"Veilbreak-${version}-Windows.${ext}"
+  }
+}

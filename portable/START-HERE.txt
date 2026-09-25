@@ -1,0 +1,75 @@
+LATEST: SINGLE-FILE PHONE EDITION
+================================
+If this package includes Veilbreak-Phone.html, that is the easiest edition:
+open it in a browser capable of running local HTML and WebGL2. No Node server
+is needed for THAT file; all assets are inside it. On phones, rotate sideways
+and use the touch joystick + drag-to-look + action buttons. Physical-device
+compatibility is not yet tested; touch-emulated Chromium passes. Some phone
+file preview apps do not execute HTML; they are not web browsers.
+
+The instructions below refer to the separate multi-file web/ edition.
+
+VEILBREAK — WEB GAME + WINDOWS BUILD KIT
+======================================
+Recommended: Windows PC/laptop, keyboard + mouse, Chrome or Edge with WebGL2.
+This is a playable prototype, not a finished commercial campaign.
+
+1. EASIEST WAY TO PLAY ON WINDOWS
+-------------------------------
+Extract this entire ZIP first. Do not run from inside the ZIP viewer.
+Install Node.js LTS (version 22.12 or newer) from https://nodejs.org if needed.
+Double-click PLAY-WINDOWS.bat in the extracted folder.
+Your browser opens http://localhost:8080. Keep the black server window open.
+No npm install, asset download, or account is needed to run this prebuilt game.
+Select Training Grounds -> Enter the Range -> Deploy Now.
+If port 8080 is busy, close the other program or set PORT to another number.
+
+Mac/Linux, or Windows terminal alternative:
+  node serve-web.cjs web
+Then open http://localhost:8080.
+If you already have Python 3 instead of Node:
+  python -m http.server 8080 --directory web
+Then open http://localhost:8080.
+
+Do not just double-click web/index.html. Browsers restrict loading 3D assets
+and JavaScript modules over file://. Use the launcher or a web host.
+
+2. PUT THE GAME ON A WEBSITE
+---------------------------
+The web/ directory is already built: HTML, CSS, JavaScript, GLB and audio.
+Upload the CONTENTS of web/ to any static host over HTTPS, keeping all folders.
+For example, upload web/ using a static hosting provider's manual deployment.
+No Node server, database, or build command is needed on the host.
+The build supports a subdirectory as well as the domain root.
+Cloud leaderboards are not available in this edition. Progress is saved in
+that browser's local storage. Do not clear site data if you want to keep it.
+The UI optionally requests Google Fonts; fallback fonts work without internet.
+
+3. BUILD A WINDOWS .EXE (ON A WINDOWS PC)
+--------------------------------------
+This ZIP is NOT a precompiled Windows executable.
+The executable build is configured but was not run or Windows-tested in the
+Linux environment used to prepare this package.
+
+Install Node.js LTS (22.12 or newer), with npm. Internet is needed for building.
+Open a terminal inside the source/ folder, then run:
+  npm ci
+  npm run build:web
+  cd desktop
+  npm install
+  npm run build:win
+
+The result should be:
+  source/desktop/release/Veilbreak-0.1.0-Windows.exe
+It is an Electron portable EXE containing the web build and Chromium, not a
+native-engine rewrite. It will be substantially larger than this ZIP.
+The EXE is unsigned; Windows may show an unknown publisher warning. Public
+release signing and Windows hardware testing have not been performed.
+
+4. CONTROLS / LIMITS
+-------------------
+WASD move; mouse look; left click shoot; right click aim; R reload;
+Shift sprint; C crouch; Space jump; E interact/pickup; 1/2 switch; Esc pause.
+Full game status and unfinished features: source/README.md.
+Assets and licenses: source/ASSETS.md and web/assets/licenses/.
+Phone menus work, but desktop gameplay is the supported target.

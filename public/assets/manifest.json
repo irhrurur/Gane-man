@@ -1,0 +1,382 @@
+[
+  {
+    "file": "Enemy_Flying.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Enemy_Flying.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Enemy_Flying.glb",
+    "blob": "c4ffc1cc8d12988fd4741bc37e0b84301a6acb23",
+    "sha256": "7e3a27532b43807b375e3d3ad9cbe1f7e20d8bb723f2dcc2a3c9efb38da73a5b",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Enemy_2Legs.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Enemy_2Legs.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Enemy_2Legs.glb",
+    "blob": "7f12ccefd21892e86736c7e65e28439084d4c72f",
+    "sha256": "d5d1de1481560415c9006dd1989c2dd09ee1b59955c43bcd8d331445a5e69cb7",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Computer.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Computer.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Computer.glb",
+    "blob": "975d406084c975985b5891e553b415a99cbbc094",
+    "sha256": "f1bbaf7d599119f401af8fdf96efd3506096cc9d087081825bcaa642a2b8acfa",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "AC.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/AC.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/AC.glb",
+    "blob": "0b9f184b3b394fbd823c1fe3281b2d662ad0ada4",
+    "sha256": "2f5f6b5f4c1a048ab10c7c023c3a1202b3ef00907931de9e16fdb7ade6b7aba8",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Antenna_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Antenna_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Antenna_1.glb",
+    "blob": "b6d5056b972080efc1a04a3747b1b700f43a8e25",
+    "sha256": "87e3ae767a9115d0304b6d6e45b1307c9c17f7d0db0d3dbbdc0e4b889cd9ebff",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Cable_Long.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Cable_Long.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Cable_Long.glb",
+    "blob": "6d03360a38f809fbab26f8dd7804b1659189138d",
+    "sha256": "b0744ac4e2ddf86ef21e4621452cea44315d23f366928de2bba9455913013513",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Pipe_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Pipe_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Pipe_1.glb",
+    "blob": "a48fff3daf7dafe120ec2838f9e1ff6e755fe6ab",
+    "sha256": "ee3099ea8f908f3d5e32e4975f8d2a663612da638afe37fb5238d4fd17b75865",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Sign_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Sign_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Sign_1.glb",
+    "blob": "16db31190cd679a202592df8889c0c84081b3f11",
+    "sha256": "38c2276d352d1be8ff12914665ede66462245142664393f5c5307c44247ca6fc",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Sign_2.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Sign_2.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Sign_2.glb",
+    "blob": "89c45276ac5c12c4f4050a2f1e86bac1a123df9d",
+    "sha256": "99deb1a75c49383766ede2600734f324ebf4f83d0ee733b0af0a96c78c7506f7",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Light_Street_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Light_Street_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Light_Street_1.glb",
+    "blob": "433a6a1dde8f3f7b2e56e9480aea41cec3d66031",
+    "sha256": "5f733c872d67d773f55a707aaebc91763b71b3b1ec5e3f1aaa430971279c1840",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Lootbox.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Lootbox.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Lootbox.glb",
+    "blob": "d36e02eb8914954f814969d1eda43e33ca7cd4c0",
+    "sha256": "89f506be7730cbc1e188aaf8fb2ddbbd4fb5ec3997423a14747c15197d388ad9",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Tank.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Tank.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Tank.glb",
+    "blob": "375d06cee26e8a7a178861e1c6af293f519c165e",
+    "sha256": "46233c12177dd622e37c35e7450277e2c8c41014405448503fe81a202d202590",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "AR_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi_guns_pack/AR_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi_guns_pack/AR_1.glb",
+    "blob": "664d53d72fbc71e5c1b0c260748cb4632aad11ba",
+    "sha256": "0370edb381d2f298efbc9ac7dd4ec11d22d3b0137bb135df1b89a2a284af9125",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "AR_2.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi_guns_pack/AR_2.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi_guns_pack/AR_2.glb",
+    "blob": "9d7f5f2049945fe59831536ba3bbf59c7120e346",
+    "sha256": "f83ac0b0d52f97c22c6615034ebf8dc8c2b9725989e2e998aa7b603c3abad2cd",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "AR_3.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi_guns_pack/AR_3.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi_guns_pack/AR_3.glb",
+    "blob": "ced1a283979b653ac002cbf88310a38aae3bc732",
+    "sha256": "a233a442a21c7889f583002f8ea7213cbe3ae926ba30531a6f3b954bad463d1e",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "AR_4.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi_guns_pack/AR_4.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi_guns_pack/AR_4.glb",
+    "blob": "3a635f3f58918ddf23179f735f6820ceb9b10c84",
+    "sha256": "d249dddf433609cccf01d1abe4f8f13d9eee4e1ba33a4bd9617598e6e6a0af60",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "SMG_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi_guns_pack/SMG_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi_guns_pack/SMG_1.glb",
+    "blob": "34e408cb25edfa7442c4995d71c9911dcac3abf7",
+    "sha256": "4a92c6765ce2e7688afd962ec1b741c95ace183a90d448d7e094a342d62114f2",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Sniper_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi_guns_pack/Sniper_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi_guns_pack/Sniper_1.glb",
+    "blob": "697b109fcaef250976a397ecd46ce5e3de7c59ac",
+    "sha256": "f802c0ba8fbc02e87329883b8486ed50c1f7d12eb2b0e5604ffcf247e77dfcd5",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Pistol_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi_guns_pack/Pistol_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi_guns_pack/Pistol_1.glb",
+    "blob": "8cd54a77bbf39083defc25168465d5c52402c7e1",
+    "sha256": "1b0bdaba36a69f4c9821a10da5234c032283fca3d8ffec6445c7a6e352e3127a",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Grenade_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi_guns_pack/Grenade_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi_guns_pack/Grenade_1.glb",
+    "blob": "eb35fe319949d9b275445adc68d7c43711be9cd5",
+    "sha256": "3d460d09020709590d2e29216285a95b997f13eb285fb227e9a0682dd7d4d80c",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Shotgun_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/survival_pack/Shotgun_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/survival_pack/Shotgun_1.glb",
+    "blob": "c614f2592695d0fffb6a2db8ca922416de9e4190",
+    "sha256": "f10b4e29e8d011c3c8b193c9354c1034121ab5606b1118feff7f2b9cd95f19b2",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "4Story_Mat.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/buildings_pack_3/4Story_Mat.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/buildings_pack_3/4Story_Mat.glb",
+    "blob": "51c82c4c482a69b127520190519bde698606d91d",
+    "sha256": "0a9592a955e5dceaaa4678a856e45f91c3d0c707039ac7d83953e5269a85b48f",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "6Story_Stack_Mat.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/buildings_pack_3/6Story_Stack_Mat.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/buildings_pack_3/6Story_Stack_Mat.glb",
+    "blob": "3681b7f6563762104ac43457358f2077c2ede25c",
+    "sha256": "5dadef6509ca7895e23841ace3f870c35fc263fd5c33e06772fcd85317242eac",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "3Story_Balcony_Mat.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/buildings_pack_3/3Story_Balcony_Mat.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/buildings_pack_3/3Story_Balcony_Mat.glb",
+    "blob": "833d54c03a748c37786e2152930326e6a2f6d96c",
+    "sha256": "7094af60939651f81e307aab148f04e1af3c0c1031ca02d910175b182c158198",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "2Story_Stairs_Mat.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/buildings_pack_3/2Story_Stairs_Mat.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/buildings_pack_3/2Story_Stairs_Mat.glb",
+    "blob": "cad9a4a47755375ce6b942c9f58f3bc2b1dd3ee4",
+    "sha256": "0d1bf214bf69ccfe52a5701fe899570e808a9a9552ae1cbfdd725adec57306e4",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Wall_1.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi/Wall_1.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi/Wall_1.glb",
+    "blob": "c28bdee1e8bceb1d57471969b86cc9e75084006f",
+    "sha256": "f6b0f085e5355ee310ab62a89eb7fa4c28705973cba84823d59f04f6f22bc831",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Window_Wall_SideA.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi/Window_Wall_SideA.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi/Window_Wall_SideA.glb",
+    "blob": "e5f2c0424bee61d293cb9c5b81efbe3748f68f3e",
+    "sha256": "0fa9080e95fa7bc304bdabf4c67dba5522224ca4dbd5597b31c40f3deb0dc067",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "FloorTile_Basic.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi/FloorTile_Basic.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi/FloorTile_Basic.glb",
+    "blob": "182715bc9d41886494ff85127ce887af6428a031",
+    "sha256": "1acd0a0d83fb6bec8a9f0e48884e32cb292e3b2d3db348244a65b95c0ead5e70",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Props_Crate.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi/Props_Crate.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi/Props_Crate.glb",
+    "blob": "d737fc1130cc17eb59e849c2e5adaba12a5466be",
+    "sha256": "d6c75dfe8b21b25bbca214fb3316be93df88b9e606018280f25961527065b7e4",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Props_Computer.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi/Props_Computer.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi/Props_Computer.glb",
+    "blob": "2662e373e0176adbf830ab84d368472b4c64483c",
+    "sha256": "69d6ecda6377123c5751ecb59c99f851ccb15506d17a585067a21029d5bce6b6",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Props_ContainerFull.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi/Props_ContainerFull.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi/Props_ContainerFull.glb",
+    "blob": "453ecf66bce925bc54ff7d290da1a6c7d4e792eb",
+    "sha256": "fe13bb9f0b524c354a5dd11a5ddaa4724e98e1a7cccb34b8e0c477d9ba35c301",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Staircase.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/modular_sci_fi/Staircase.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/modular_sci_fi/Staircase.glb",
+    "blob": "8bcb585bd1455d8ff5f83d41043b007aac9ff564",
+    "sha256": "660101cd3cecea0025d06b9b765edc40ae717cce7eefb38ec6fcc0c5b566b906",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Dispatcher.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/spaceships_pack/Dispatcher.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/spaceships_pack/Dispatcher.glb",
+    "blob": "cb73394c4bd9337617ed078a9595e9c1712da900",
+    "sha256": "92032a847042ce2f51528feae31f1eb0caca0cda7b0059732343396243fb860d",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Street_Straight.glb",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/street_pack/Street_Straight.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/street_pack/Street_Straight.glb",
+    "blob": "cbafa74a720219340c81c0004212e6ed569b05b2",
+    "sha256": "85e165d204e8301fc7bf4abeda37d60559239936459b740c0f940436c878e748",
+    "author": "Quaternius",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "shot.ogg",
+    "source": "https://github.com/iwenzhou/kenney/blob/main/Audio (295 files)/Digital sounds (60 sounds)/laser1.ogg",
+    "repository": "iwenzhou/kenney",
+    "path": "Audio (295 files)/Digital sounds (60 sounds)/laser1.ogg",
+    "blob": "383035b25c269ab2c58b393b95711c84d69c77db",
+    "sha256": "57f0ca591846e341b2e89af3321959f8e820626e510b2130274c824a133a5f97",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "step.ogg",
+    "source": "https://github.com/iwenzhou/kenney/blob/main/Audio (295 files)/RPG sounds (50 sounds)/footstep00.ogg",
+    "repository": "iwenzhou/kenney",
+    "path": "Audio (295 files)/RPG sounds (50 sounds)/footstep00.ogg",
+    "blob": "ca5dd2b6aa45f73f53685988aacec0a88f31887b",
+    "sha256": "6fe61ef1fc3bcf0e253bf2eb64759db6cb69e2fe452f4d88cc597ecf78a3d601",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "reload.ogg",
+    "source": "https://github.com/iwenzhou/kenney/blob/main/Audio (295 files)/UI sounds (50 sounds)/click1.ogg",
+    "repository": "iwenzhou/kenney",
+    "path": "Audio (295 files)/UI sounds (50 sounds)/click1.ogg",
+    "blob": "4f17f1cdd3f3554546329fb2d84f330e7c17263b",
+    "sha256": "fa77d595b21e7b206b7eb10eacb0663def8f6d8658df17b7cef7a0125c86046e",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "Character.glb",
+    "repository": "trebeljahr/quaternius-showcase",
+    "path": "public/glb/cyberpunk_pack/Character.glb",
+    "blob": "3fb733caf75fbe444f33495336a2bde00885de85",
+    "sha256": "006e28f474c8fc20f010ed19c761856a07fbeb967c87e3f5b14474ef745ae844",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "source": "https://github.com/trebeljahr/quaternius-showcase/blob/main/public/glb/cyberpunk_pack/Character.glb"
+  }
+]
